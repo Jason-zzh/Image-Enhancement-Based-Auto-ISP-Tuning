@@ -1,0 +1,25 @@
+* text=auto
+
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+*.bmp binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary
+*.pth binary
+*.pt binary
+*.ckpt binary
+*.raw binary
+*.rgb binary
+*.arw binary
+*.ARW binary
+*.dng binary
+*.DNG binary
+*.raf binary
+*.RAF binary

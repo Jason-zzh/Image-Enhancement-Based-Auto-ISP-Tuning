@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RawFormer Image Enhancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>RawFormer: Drag & Drop RAW Enhancer</h1>
+        <div class="upload-area" id="uploadArea">
+            <p>Drag your RAW image (.ARW, .DNG, .RAW) here or click to browse</p>
+            <input type="file" id="fileInput" accept=".arw,.dng,.raw" style="display:none;">
+        </div>
+        <div class="controls">
+            <button id="runBtn" disabled>Run Enhancement</button>
+            <button id="clearBtn">Clear Session</button>
+        </div>
+        <div class="preview-container">
+            <div class="preview no auto light">
+                <h2>Original RAW</h2>
+                <img id="origImg" src="" alt="Original" style="display:none;">
+            </div>
+            <!-- <div class="preview left">
+                <h2>Enhanced by rawpy</h2>
+                <img id="tradImg" src="" alt="Traditional" style="display:none;">
+            </div> -->
+            <div class="preview right">
+                <h2>Enhanced by Our AIISP Model</h2>
+                <img id="enhancedImg" src="" alt="Enhanced" style="display:none;">
+            </div>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

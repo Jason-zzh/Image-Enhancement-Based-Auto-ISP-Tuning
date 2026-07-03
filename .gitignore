@@ -1,0 +1,60 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+runs/
+
+# Training outputs and checkpoints
+result/
+checkpoints/
+weights/
+*.pth
+*.pt
+*.ckpt
+model_best.pth
+
+# Private datasets and raw sensor files
+freetech_dataset/
+Mono_Colored_RAW_Paired_DATASET/
+SID/
+Fuji/
+MCR/
+*.raw
+*.rgb
+*.arw
+*.ARW
+*.dng
+*.DNG
+*.raf
+*.RAF
+
+# Web demo runtime data
+uploads/*
+static/enhanced_*
+static/trad_*
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
