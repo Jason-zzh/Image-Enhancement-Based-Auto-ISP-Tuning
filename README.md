@@ -268,13 +268,9 @@ The source code can be used, modified, and redistributed under the terms of the 
 
 This repository does not redistribute private data or trained weights derived from private data.
 
-## Limitations and TODO
+## Limitations
 
 - Freetech 数据集和训练权重不随仓库提供。
-- Dataset paths and RAW parameters are currently hard-coded in several scripts.
-- `requirements.txt` 只列出了部分依赖，运行训练和 demo 还需要 PyTorch、OpenCV、Flask、TensorBoard 等。
-- 当前 `model_freetech.py` 中 `reparameterize()` 是预留接口，训练脚本没有完整执行模型结构融合导出。
-- NPU deployment, quantization, and board-side adaptation are not included.
 - Web 和视频流脚本中的分辨率、header size、bit depth、Bayer pattern 都是按当前 Freetech 样例设置的工程参数，迁移到新设备时需要重新确认。
 
 ## Acknowledgement
