@@ -1,4 +1,4 @@
-# Image-Enhanement-Based-Auto-ISP-Tuning
+# Image-Enhancement-Based-Auto-ISP-Tuning
 
 This repository provides a RawFormer-based AI-ISP prototype for automotive RAW image enhancement. It maps single-channel Bayer RAW inputs to enhanced RGB outputs using a Conv-Transformer hybrid architecture and RepNR-based noise modeling modules.
 
